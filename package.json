@@ -1,0 +1,63 @@
+{
+  "name": "r3f-template",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://evandaley.github.io/r3f-multi-stage/",
+  "dependencies": {
+    "@react-spring/core": "^9.1.2",
+    "@react-spring/three": "^9.1.2",
+    "@react-spring/web": "^9.1.2",
+    "@react-three/drei": "^7.3.1",
+    "@react-three/fiber": "^7.0.6",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "aphrodite": "^2.4.0",
+    "gh-pages": "^3.2.3",
+    "leva": "^0.9.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hamburger-button": "0.0.1",
+    "react-player": "^2.9.0",
+    "react-scripts": "4.0.3",
+    "three": "^0.128.0",
+    "web-vitals": "^1.1.2",
+    "zustand": "^3.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "dev": "  react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "ship": "npm run build && npm run deploy",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 0
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}

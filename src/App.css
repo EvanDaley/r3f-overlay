@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.html-content-container {
+    /* pointer-events: none; */
+    /* position: absolute; */
+    z-index: 1;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* display: grid; */
+    /* place-content: center; */
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+body {
+    background: -webkit-linear-gradient(90deg, #134E5E 10%, #71B280 90%);
+    background: -moz-linear-gradient(90deg, #134E5E 10%, #71B280 90%);
+    background: -ms-linear-gradient(90deg, #134E5E 10%, #71B280 90%);
+    background: -o-linear-gradient(90deg, #134E5E 10%, #71B280 90%);
+    background: linear-gradient(90deg, #134E5E 10%, #134E5E 90%);
+}
+
+
+/* 
+body {
+  background: linear-gradient(90deg, black 10%, black 90%);
+} */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    position: relative;
+    top: 25% !important;
+    font-size: 25px;
+}
+
+.flex-item-left {
+    padding: 6px;
+    flex: 30%;
+    text-align: right;
+}
+
+.flex-item-right {
+    padding-left: 10px;
+    flex: 70%;
+    padding-right: 150px;
+}
+
+
+/* Responsive layout - switch to one column layout when under 800px */
+
+@media (max-width: 800px) {
+    .flex-container {
+        top: 5% !important;
+    }
+    .flex-item-right,
+    .flex-item-left {
+        text-align: center;
+        flex: 100%;
+        padding-right: 5px;
+        padding-bottom: 25px;
+    }
+    .btn {
+        display: block !important;
+        flex: 50%;
+        margin: 4px;
+    }
+}
+
+.button-overlay {
+    pointer-events: auto;
+    height: 20%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    /* backgroundImage: linear-gradient(90deg; #134E5E 10%; #71B280 90%), */
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+
+/* Buttons */
+
+.btn {
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    height: 60px;
+    display: inline-flex;
+}
+
+
+/* Green */
+
+.success {
+    border-color: #04AA6D;
+    color: green;
+}
+
+.success:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* Blue */
+
+.info {
+    border-color: #2196F3;
+    color: dodgerblue
+}
+
+.info:hover {
+    background: #2196F3;
+    color: white;
+}
+
+
+/* Orange */
+
+.warning {
+    border-color: #ff9800;
+    color: orange;
+}
+
+.warning:hover {
+    background: #ff9800;
+    color: white;
+}
+
+
+/* Red */
+
+.danger {
+    border-color: #f44336;
+    color: red
+}
+
+.danger:hover {
+    background: #f44336;
+    color: white;
+}
+
+
+/* Gray */
+
+.default {
+    border-color: #e7e7e7;
+    color: black;
+}
+
+.default:hover {
+    background: #e7e7e7;
+}
+
+/* VideoSandbox */
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+} */
+
+#myVideo {
+  position: fixed;
+  width:100%;     
+  height: auto;
+  top: 0;
+
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #myVideo {
+    width:auto  ;
+    min-height: 100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #myVideo { 
+    height: 100%;
+  }
+}
+/* 
+@media (max-width: 1600px) {
+  #myVideo { 
+    left: -400px
+  }
+}
+
+@media (max-width: 1200px) {
+  #myVideo { 
+    left: -600px
+  }
+}
+
+@media (max-width: 800px) {
+  #myVideo { 
+    left: -700px
+  }
+}
+
+@media (max-width: 600px) {
+  #myVideo { 
+    left: -700px
+  }
+} */
+
+/* .content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+} */
