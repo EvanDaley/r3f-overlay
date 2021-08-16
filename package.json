@@ -2,7 +2,7 @@
   "name": "r3f-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://evandaley.github.io/r3f-multi-stage/",
+  "homepage": "https://evandaley.github.io/r3f-overlay/",
   "dependencies": {
     "@react-spring/core": "^9.1.2",
     "@react-spring/three": "^9.1.2",

@@ -8,7 +8,7 @@ const useStore = create(set => ({
   videoIndex: 0,
   switchVideos: () => set(state => ({ 
     // videoIndex: ((state.videoIndex + 1)) 
-    videoIndex: ((state.videoIndex + 1) % (state.videoPaths.length + 1)) 
+    videoIndex: ((state.videoIndex + 1) % (state.videoPaths.length)) 
   })),
 
   sceneIndex: 0,
